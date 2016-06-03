@@ -120,8 +120,8 @@ void post_sequence_tree(Tree *root) {
   } else {
     if(*root != NULL) {
       post_sequence_tree(&((*root)->right));
-      cout << (*root)->info << endl;
       post_sequence_tree(&((*root)->left));
+      cout << (*root)->info << endl;
     } else {
       /* do nothing */
     }
